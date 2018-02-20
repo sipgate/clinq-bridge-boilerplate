@@ -2,6 +2,8 @@
 
 You can use this repository to bootstrap a new CLINQ CRM-Bridge.
 
+If you want to implement your bridge in plain JavaScript, use [this](https://github.com/sipgate/clinq-crm-bridge-boilerplate) repository.
+
 ## Step by step guide
 
 1. Clone [this](https://github.com/sipgate/clinq-crm-bridge-boilerplate-typescript) repository.
