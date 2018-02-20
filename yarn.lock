@@ -240,9 +240,9 @@ chalk@^2.3.0:
     escape-string-regexp "^1.0.5"
     supports-color "^5.2.0"
 
-clinq-crm-bridge@^2.0.1:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/clinq-crm-bridge/-/clinq-crm-bridge-2.0.1.tgz#b27e3424cd06c72b8ea773efc87f456b7a287d6f"
+clinq-crm-bridge@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/clinq-crm-bridge/-/clinq-crm-bridge-2.1.0.tgz#850f482dc9314da112b7cf1fbdc789bd45512b6b"
   dependencies:
     auth-header "^0.3.1"
     express "^4.16.2"
