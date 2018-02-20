@@ -1,4 +1,4 @@
-# CLINQ CRM-Bridge Boilerplate Repository
+# CLINQ CRM-Bridge Boilerplate Repository (TypeScript)
 
 You can use this repository to bootstrap a new CLINQ CRM-Bridge.
 
@@ -7,9 +7,12 @@ If you want to implement your bridge in plain JavaScript, use [this](https://git
 ## Step by step guide
 
 1. Clone [this](https://github.com/sipgate/clinq-crm-bridge-boilerplate-typescript) repository.
+```bash
+git clone git@github.com:sipgate/clinq-crm-bridge-boilerplate-typescript.git clinq-crm-bridge-mycrm
+```
 2. Run `npm install` or `yarn` to install all dependencies.
 3. Start the bridge with `npm start` or `yarn start`.
-4. Edit the `index.js` file and implement the method stubs.
+4. Edit the `index.ts` file and implement the method stubs.
 5. Test your implementation (e.g. `curl -H "Authorization: Bearer abcdef123456" http://localhost:8080/contacts`).
 6. Make sure the Docker container is still working (`docker build -t clinq-crm-bridge . &&  docker run -p 8080:8080 clinq-crm-bridge`).
 7. Create a new Git repository (e.g. `clinq-crm-bridge-salesforce`) and push your bridge.
