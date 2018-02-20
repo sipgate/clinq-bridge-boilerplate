@@ -10,7 +10,7 @@
     "start": "ts-node index"
   },
   "dependencies": {
-    "clinq-crm-bridge": "^2.0.1"
+    "clinq-crm-bridge": "^2.1.0"
   },
   "devDependencies": {
     "ts-node": "^5.0.0",
