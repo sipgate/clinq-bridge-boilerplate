@@ -7,12 +7,15 @@
   "author": "Benjamin Kluck <kluck@sipgate.de>",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "ts-node index"
+    "start": "ts-node src/index",
+    "compile": "tsc"
   },
   "dependencies": {
     "clinq-crm-bridge": "^2.0.1"
   },
   "devDependencies": {
+    "@types/express": "^4.11.1",
+    "@types/node": "^9.4.6",
     "ts-node": "^5.0.0",
     "typescript": "^2.7.2"
   }
