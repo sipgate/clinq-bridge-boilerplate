@@ -1,9 +1,9 @@
-import { CrmAdapter, Contact, start } from "clinq-crm-bridge";
+import { CrmAdapter, CrmConfig, Contact, start } from "clinq-crm-bridge";
 
 class MyCrmAdapter implements CrmAdapter {
 
-	public async getContacts(apiKey: string): Promise<Contact[]> {
-		// TODO: Fetch contacts from CRM using apiKey or throw on error
+	public async getContacts(config: CrmConfig): Promise<Contact[]> {
+		// TODO: Fetch contacts from CRM using config.apiKey and config.api or throw on error
 		const contacts: Contact[] = await Promise.resolve([
 			{
 				name: "Benjamin Kluck",
