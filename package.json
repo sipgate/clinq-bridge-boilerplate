@@ -20,7 +20,7 @@
     "compile": "tsc"
   },
   "dependencies": {
-    "clinq-crm-bridge": "3.0.3"
+    "clinq-crm-bridge": "^3.1.0"
   },
   "devDependencies": {
     "@types/express": "^4.11.1",
