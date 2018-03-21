@@ -44,8 +44,8 @@ class MyCrmAdapter implements CrmAdapter {
 		// const query = queryString.stringify({ code });
 		// const response = await request(`https://crm.example.com/oauth2/token?${query}`)
 		// return {
-		//		apiKey: response.accessToken,
-		//		apiUrl: response.instanceUrl
+		// 	apiKey: response.accessToken,
+		// 	apiUrl: response.instanceUrl
 		// };
 
 		const crmConfig: CrmConfig = await Promise.resolve({
