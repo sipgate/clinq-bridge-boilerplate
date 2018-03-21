@@ -30,7 +30,7 @@ class MyCrmAdapter implements CrmAdapter {
 		return redirectUrl;
 	}
 
-		/**
+	/**
 	 * REQUIRED FOR OAUTH2 FLOW
 	 * Users will be redirected here after authorizing CLINQ.
 	 *
