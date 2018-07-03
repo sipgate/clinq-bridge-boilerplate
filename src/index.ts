@@ -1,11 +1,11 @@
-import { CrmAdapter, CrmConfig, Contact, start } from "clinq-crm-bridge";
+import { Adapter, Config, Contact, start } from "@clinq/bridge";
 import { Request } from "express";
 
-class MyCrmAdapter implements CrmAdapter {
+class MyAdapter implements Adapter {
 	/**
-	 * TODO: Fetch contacts from CRM using config.apiKey and config.apiUrl or throw on error
+	 * TODO: Fetch contacts from the contacts provider using config.apiKey and config.apiUrl or throw on error
 	 */
-	public async getContacts(config: CrmConfig): Promise<Contact[]> {
+	public async getContacts(config: Config): Promise<Contact[]> {
 		const contacts: Contact[] = await Promise.resolve([
 			{
 				name: "Benjamin Kluck",
@@ -23,7 +23,7 @@ class MyCrmAdapter implements CrmAdapter {
 
 	/**
 	 * REQUIRED FOR OAUTH2 FLOW
-	 * Return the redirect URL for the given CRM.
+	 * Return the redirect URL for the given contacts provider.
 	 * Users will be redirected here to authorize CLINQ.
 	 */
 	public async getOAuth2RedirectUrl(): Promise<string> {
@@ -40,7 +40,7 @@ class MyCrmAdapter implements CrmAdapter {
 	 * TODO: Extract the 'code' from request, fetch an access token
 	 * and return it as 'apiKey'
 	 */
-	public async handleOAuth2Callback(req: Request): Promise<CrmConfig> {
+	public async handleOAuth2Callback(req: Request): Promise<Config> {
 		// EXAMPLE:
 		// const { code } = req.query;
 		// const query = queryString.stringify({ code });
@@ -50,12 +50,12 @@ class MyCrmAdapter implements CrmAdapter {
 		// 	apiUrl: response.instanceUrl
 		// };
 
-		const crmConfig: CrmConfig = await Promise.resolve({
+		const config: Config = await Promise.resolve({
 			apiKey: "a1b2c3",
 			apiUrl: "https://eu5.crm.example.com/api"
 		});
-		return crmConfig;
+		return config;
 	}
 }
 
-start(new MyCrmAdapter());
+start(new MyAdapter());

@@ -2,6 +2,14 @@
 # yarn lockfile v1
 
 
+"@clinq/bridge@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@clinq/bridge/-/bridge-0.1.0.tgz#b1746c15e3da172c734da670aa14bea2aa982f58"
+  dependencies:
+    ajv "^6.1.1"
+    cors "^2.8.4"
+    express "^4.16.2"
+
 "@types/body-parser@*":
   version "1.16.8"
   resolved "https://registry.yarnpkg.com/@types/body-parser/-/body-parser-1.16.8.tgz#687ec34140624a3bec2b1a8ea9268478ae8f3be3"
@@ -324,14 +332,6 @@ class-utils@^0.3.5:
 cli-boxes@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/cli-boxes/-/cli-boxes-1.0.0.tgz#4fa917c3e59c94a004cd61f8ee509da651687143"
-
-clinq-crm-bridge@^4.2.1:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/clinq-crm-bridge/-/clinq-crm-bridge-4.2.1.tgz#408962dcd9cc8e8b88f1dd2fbbe8431e4a859e2e"
-  dependencies:
-    ajv "^6.1.1"
-    cors "^2.8.4"
-    express "^4.16.2"
 
 co@^4.6.0:
   version "4.6.0"
