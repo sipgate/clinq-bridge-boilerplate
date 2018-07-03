@@ -1,4 +1,4 @@
-# CLINQ CRM-Bridge Boilerplate Repository (TypeScript)
+# CLINQ Bridge Boilerplate Repository (TypeScript)
 
 You can use this repository to bootstrap a new CLINQ Bridge.
 
