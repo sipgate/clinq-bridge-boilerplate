@@ -16,7 +16,9 @@ class MyAdapter implements Adapter {
 				company: "MyCompany GmbH",
 				email: "mustermann@example.com",
 				name: "Max Mustermann",
-				phoneNumbers: [phoneNumber]
+				phoneNumbers: [phoneNumber],
+				contactUrl: "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633",
+				avatarUrl: "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633/avatar.png",
 			}
 		]);
 		return contacts;
