@@ -1,4 +1,4 @@
-# CLINQ Bridge Boilerplate Repository (TypeScript)
+# CLINQ Bridge Boilerplate Repository
 
 Use this repository to bootstrap a new CLINQ Bridge.
 
