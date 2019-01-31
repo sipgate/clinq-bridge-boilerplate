@@ -1,4 +1,4 @@
-import { Adapter, Config, Contact, PhoneNumber, start } from "@clinq/bridge";
+import { Adapter, Config, Contact, PhoneNumber, start, PhoneNumberLabel } from "@clinq/bridge";
 import { Request } from "express";
 
 class MyAdapter implements Adapter {
@@ -7,22 +7,21 @@ class MyAdapter implements Adapter {
    */
   public async getContacts(config: Config): Promise<Contact[]> {
     const phoneNumber: PhoneNumber = {
-      label: "Mobile",
+      label: PhoneNumberLabel.MOBILE,
       phoneNumber: "+4915799912345"
     };
-    const contacts: Contact[] = await Promise.resolve([
-      {
-        id: "7f23375d-35e2-4034-889a-2bdc9cba9633",
-        company: "MyCompany GmbH",
-        email: "mustermann@example.com",
-        name: "Max Mustermann",
-        phoneNumbers: [phoneNumber],
-        contactUrl:
-          "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633",
-        avatarUrl:
-          "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633/avatar.png"
-      }
-    ]);
+    const contact: Contact = {
+      id: "7f23375d-35e2-4034-889a-2bdc9cba9633",
+      name: null,
+      firstName: "Max",
+      lastName: "Mustermann",
+      email: "mustermann@example.com",
+      organization: "MyCompany GmbH",
+      contactUrl: "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633",
+      avatarUrl: "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633/avatar.png",
+      phoneNumbers: [phoneNumber]
+    };
+    const contacts: Contact[] = await Promise.resolve([contact]);
     return contacts;
   }
 
@@ -32,9 +31,7 @@ class MyAdapter implements Adapter {
    * Users will be redirected here to authorize CLINQ.
    */
   public async getOAuth2RedirectUrl(): Promise<string> {
-    const redirectUrl = await Promise.resolve(
-      "https://crm.example.com/oauth2/authorize"
-    );
+    const redirectUrl = await Promise.resolve("https://crm.example.com/oauth2/authorize");
     return redirectUrl;
   }
 
