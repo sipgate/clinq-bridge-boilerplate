@@ -1,9 +1,9 @@
 {
-  "name": "clinq-crm-bridge-boilerplate",
+  "name": "clinq-bridge-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate project to bootstrap a new CLINQ CRM-Bridge in TypeScript.",
+  "description": "Boilerplate project to bootstrap a new CLINQ Bridge",
   "main": "dist/index.js",
-  "repository": "git@github.com:sipgate/clinq-crm-bridge-boilerplate.git",
+  "repository": "git@github.com:sipgate/clinq-bridge-boilerplate.git",
   "contributors": [
     {
       "name": "Benjamin Kluck",
