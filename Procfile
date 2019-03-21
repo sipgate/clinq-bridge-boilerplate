@@ -1,1 +1,1 @@
-app: node dist/index
+web: node dist/index
