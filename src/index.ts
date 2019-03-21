@@ -1,4 +1,11 @@
-import { Adapter, Config, Contact, PhoneNumber, start, PhoneNumberLabel } from "@clinq/bridge";
+import {
+  Adapter,
+  Config,
+  Contact,
+  PhoneNumber,
+  PhoneNumberLabel,
+  start
+} from "@clinq/bridge";
 import { Request } from "express";
 
 class MyAdapter implements Adapter {
@@ -17,8 +24,10 @@ class MyAdapter implements Adapter {
       lastName: "Mustermann",
       email: "mustermann@example.com",
       organization: "MyCompany GmbH",
-      contactUrl: "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633",
-      avatarUrl: "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633/avatar.png",
+      contactUrl:
+        "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633",
+      avatarUrl:
+        "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633/avatar.png",
       phoneNumbers: [phoneNumber]
     };
     const contacts: Contact[] = await Promise.resolve([contact]);
@@ -31,7 +40,9 @@ class MyAdapter implements Adapter {
    * Users will be redirected here to authorize CLINQ.
    */
   public async getOAuth2RedirectUrl(): Promise<string> {
-    const redirectUrl = await Promise.resolve("https://crm.example.com/oauth2/authorize");
+    const redirectUrl = await Promise.resolve(
+      "https://crm.example.com/oauth2/authorize"
+    );
     return redirectUrl;
   }
 
