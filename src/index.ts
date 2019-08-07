@@ -53,7 +53,9 @@ class MyAdapter implements Adapter {
    * TODO: Extract the 'code' from request, fetch an access token
    * and return it as 'apiKey'
    */
-  public async handleOAuth2Callback(req: Request): Promise<Config> {
+  public async handleOAuth2Callback(
+    req: Request
+  ): Promise<{ apiKey: string; apiUrl: string }> {
     // EXAMPLE:
     // const { code } = req.query;
     // const query = queryString.stringify({ code });
@@ -63,11 +65,10 @@ class MyAdapter implements Adapter {
     // 	apiUrl: response.instanceUrl
     // };
 
-    const config: Config = await Promise.resolve({
+    return Promise.resolve({
       apiKey: "a1b2c3",
       apiUrl: "https://eu5.crm.example.com/api"
     });
-    return config;
   }
 }
 
