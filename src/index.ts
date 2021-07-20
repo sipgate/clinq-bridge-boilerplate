@@ -12,6 +12,7 @@ class MyAdapter implements Adapter {
   /**
    * TODO: Fetch contacts from the contacts provider using config.apiKey and config.apiUrl or throw on error
    */
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   public async getContacts(config: Config): Promise<Contact[]> {
     const phoneNumber: PhoneNumber = {
       label: PhoneNumberLabel.MOBILE,
@@ -53,6 +54,7 @@ class MyAdapter implements Adapter {
    * TODO: Extract the 'code' from request, fetch an access token
    * and return it as 'apiKey'
    */
+  /* eslint-disable @typescript-eslint/no-unused-vars */
   public async handleOAuth2Callback(
     req: Request
   ): Promise<{ apiKey: string; apiUrl: string }> {
