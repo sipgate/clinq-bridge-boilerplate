@@ -15,7 +15,7 @@ Use this repository to bootstrap a new CLINQ Bridge.
 
 ## Coding style and linting
 
-[Prettier](https://prettier.io/) and [TSLint](https://palantir.github.io/tslint/) are included by default. Feel free to remove these tools (or certain rules) if you don't like them.
+[Prettier](https://prettier.io/) and [ESLint](https://eslint.org/) are included by default. Feel free to remove these tools (or certain rules) if you don't like them.
 
 ## License
 
