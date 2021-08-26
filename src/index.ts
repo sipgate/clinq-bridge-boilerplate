@@ -4,7 +4,7 @@ import {
   Contact,
   PhoneNumber,
   PhoneNumberLabel,
-  start
+  start,
 } from "@clinq/bridge";
 import { Request } from "express";
 
@@ -16,7 +16,7 @@ class MyAdapter implements Adapter {
   public async getContacts(config: Config): Promise<Contact[]> {
     const phoneNumber: PhoneNumber = {
       label: PhoneNumberLabel.MOBILE,
-      phoneNumber: "+4915799912345"
+      phoneNumber: "+4915799912345",
     };
     const contact: Contact = {
       id: "7f23375d-35e2-4034-889a-2bdc9cba9633",
@@ -29,7 +29,7 @@ class MyAdapter implements Adapter {
         "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633",
       avatarUrl:
         "https://www.example.com/contact/7f23375d-35e2-4034-889a-2bdc9cba9633/avatar.png",
-      phoneNumbers: [phoneNumber]
+      phoneNumbers: [phoneNumber],
     };
     const contacts: Contact[] = await Promise.resolve([contact]);
     return contacts;
@@ -69,7 +69,7 @@ class MyAdapter implements Adapter {
 
     return Promise.resolve({
       apiKey: "a1b2c3",
-      apiUrl: "https://eu5.crm.example.com/api"
+      apiUrl: "https://eu5.crm.example.com/api",
     });
   }
 }
