@@ -1,3 +1,7 @@
+### ⚠️ This template repository has been deprecated! ⚠️
+
+Please use [integration-bridge-boilerplate](https://github.com/sipgate/integration-bridge-boilerplate) for future projects.
+
 # CLINQ Bridge Boilerplate Repository
 
 Use this repository to bootstrap a new CLINQ Bridge.
